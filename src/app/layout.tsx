@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-softwhite font-sans antialiased">
+      <body className="min-h-screen font-sans antialiased">
         <Nav />
         <ContextProvider cookies={null}>
           {children}

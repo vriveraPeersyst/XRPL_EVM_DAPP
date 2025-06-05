@@ -7,20 +7,24 @@ import Image from "next/image";
 export default function Nav() {
   const router = useRouter();
   return (
-    <header className="h-100 flex items-center justify-center bg-black shadow">
+    <header className="w-full flex items-center justify-center py-2" style={{ background: "var(--background)" }}>
       <button
         type="button"
         onClick={() => router.push("/")}
-        className="focus:outline-none"
+        className="focus:outline-none w-full"
         aria-label="Go to home"
       >
-        <Image
-          src="/assets/XRPLEVM_WhiteLogo.png"
-          alt="1X2 logo"
-          width={150}
-          height={30}
-          priority
-        />
+        <div className="w-full flex items-center justify-center">
+          <Image
+            src="/assets/XRPLEVM_FullWhiteLogo.png"
+            alt="XRPL EVM logo"
+            width={0}
+            height={0}
+            sizes="30vw"
+            style={{ width: "30vw", maxWidth: "30vw", height: "auto" }}
+            priority
+          />
+        </div>
       </button>
     </header>
   );
