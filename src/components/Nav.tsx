@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Nav() {
   const router = useRouter();
   return (
-    <header className="w-full flex items-center justify-center py-2" style={{ background: "var(--background)" }}>
+    <header className="w-full flex items-center justify-center py-2" style={{ background: "none" }}>
       <button
         type="button"
         onClick={() => router.push("/")}
